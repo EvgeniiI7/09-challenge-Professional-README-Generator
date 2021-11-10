@@ -97,4 +97,4 @@ function init() {
         .then(data => {
             writeToFile('./dist/README.md',generateMarkdown(data)) 
         });
-}
+};
