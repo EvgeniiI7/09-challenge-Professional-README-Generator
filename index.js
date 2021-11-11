@@ -1,22 +1,21 @@
 // TODO: Include packages needed for this application
+const { clear } = require('console');
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-
 const questions = [
     {
         type: 'input',
         name: 'title',
         message: 'What is the title of your project? (required)',
         validate: title => {
-            if (title) return true; // is return needed?
+            if (title) return true; //is return needed?
             console.log('You must enter a title for your project');
             return false;
         }
     },
-
     {
         type: 'input',
         name: 'description',
@@ -27,38 +26,40 @@ const questions = [
             return false;
         }
     },
-
     {
         type: 'input',
         name: 'installation',
-        message: 'What are the steps required to install your project?'
+        message: 'How to install the project?'
     },
-
     {
         type: 'input',
         name: 'usage',
-        message: 'Provide instructions and examples for use.'
+        message: 'Please provide instructions and examples for use.'
     },
-
     {
         type: 'list',
         name: 'license',
-        message: 'Please select a license (required)',
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
+        message: 'What is the project licence type? (required)',
+        choices: [
+            'GNU AGPLv3',
+            'GNU GPLv3',
+            'Mozilla Public License 2.0',
+            'Apache License 2.0',
+            'MIT License',
+            'Boost Software License 1.0',
+            'The Unlicense'
+        ]
     },
-
     {
         type: 'input',
         name: 'contributing',
-        message: 'Please specify instructions for contributing to this project'
+        message: 'What is the contribution guideline?'
     },
-
     {
         type: 'input',
         name: 'tests',
-        message: 'Please provide any testing examples for this project'
+        message: 'Please provide test examples for this project'
     },
-
     {
         type: 'input',
         name: 'username',
@@ -69,7 +70,6 @@ const questions = [
             return false;
         }
     },
-    
     {
         type: 'input',
         name: 'email',
@@ -97,4 +97,7 @@ function init() {
         .then(data => {
             writeToFile('./dist/README.md',generateMarkdown(data)) 
         });
-};
+}
+
+// Function call to initialize app
+init();
