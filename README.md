@@ -53,4 +53,4 @@ THEN I am taken to the corresponding section of the README
 ## Link to screenshot https://github.com/EvgeniiI7/Professional-README-Generator/issues/5
 
 
-## Link to GitHub repository:
+## Link to GitHub repository:https://github.com/EvgeniiI7/Professional-README-Generator
