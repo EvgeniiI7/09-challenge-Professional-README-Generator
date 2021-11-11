@@ -47,7 +47,7 @@ THEN I am taken to the corresponding section of the README
 * Make sure that your repo includes a `package.json` with the required dependencies. You can create one by running `npm init` when you first set up the project, before installing any dependencies.
 
 
-## Link to walkthrough video:
+## Link to walkthrough video:https://github.com/EvgeniiI7/Professional-README-Generator/issues/6
 
 
 ## Link to screenshot https://github.com/EvgeniiI7/Professional-README-Generator/issues/5
