@@ -50,7 +50,7 @@ THEN I am taken to the corresponding section of the README
 ## Link to walkthrough video:
 
 
-## Link to screenshot
+## Link to screenshot https://github.com/EvgeniiI7/Professional-README-Generator/issues/5
 
 
 ## Link to GitHub repository:
