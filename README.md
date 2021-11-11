@@ -20,7 +20,7 @@ I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ```
 
-## ## User workflow:
+## User workflow:
 
 ```
 GIVEN a command-line application that accepts user input
@@ -54,3 +54,5 @@ THEN I am taken to the corresponding section of the README
 
 
 ## Link to GitHub repository:https://github.com/EvgeniiI7/Professional-README-Generator
+
+
